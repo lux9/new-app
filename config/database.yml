@@ -1,25 +1,28 @@
-# SQLite version 3.x
-#   gem install sqlite3
-#
-#   Ensure the SQLite 3 gem is defined in your Gemfile
-#   gem 'sqlite3'
-#
 default: &default
   adapter: postgresql
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  timeout: 5000
+  encoding: utf8
+  pool: 5
+  host: localhost
+  username: <%= ENV['DEV_USERNAME'] %>
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
 
 development:
   <<: *default
-  database: surfshop_development
+  database: ElClub_development
 
-# Warning: The database defined as "test" will be erased and
-# re-generated from your development database when you run "rake".
-# Do not set this db to the same as development or production.
+
 test:
   <<: *default
-  database: surfshop_test
+  database: ElClub_test
 
+# As with config/secrets.yml, you never want to store sensitive information,
+# like your database password, in your source code. If your source code is
+
+#
 production:
   <<: *default
-  database: surfshop_production
+  # encoding: unicode
+  pool: 25
+  database: elclub_production
+  username: <%= ENV['BOXFUL_POSTGRES_USER'] %>
+  password: <%= ENV['BOXFUL_POSTGRES_PASSWORD'] %>
