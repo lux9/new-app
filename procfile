@@ -1,1 +1,5 @@
-web: bundle exec puma -C config/puma.rb
+# web: bundle exec puma -C config/puma.rb
+rails: RAILS_ENV=development bundle exec rails server
+# redis: redis-server /usr/local/etc/redis.conf
+sidekiq: bundle exec sidekiq -C config/local_sidekiq.yml
+webpack: ./bin/webpack-dev-server
