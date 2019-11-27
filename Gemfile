@@ -7,11 +7,11 @@ ruby '2.5.1'
 gem 'rails', '~> 5.2.1'
 # Use Puma as the app server
 gem 'puma'
+gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
-gem 'sqlite3'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
@@ -46,6 +46,7 @@ end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
+  gem 'sqlite3'
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
