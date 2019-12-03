@@ -6,17 +6,17 @@ $body-font: "Best Rock Regular", "Helvetica", "sans-serif";
 $headers-font: "TheSkinny", "Helvetica", "sans-serif";
 
 // To use a font file (.woff) uncomment following lines
-@font-face {
-  font-family: "TheSkinny";
-  src: font-url('TheSkinny.otf') format('truetype');
-  src: font-url('TheSkinny-bold.otf') format('truetype');
-  font-style: normal;
-  font-weight: normal;
-  font-family: "Best Rock Regular";
-  src: url('Best Rock.woff') format('woff');
-  font-style: normal;
-  font-weight: normal;
-}
+// @font-face {
+//   font-family: "TheSkinny";
+//   src: font-url('TheSkinny.otf') format('truetype');
+//   src: font-url('TheSkinny-bold.otf') format('truetype');
+//   font-style: normal;
+//   font-weight: normal;
+//   font-family: "Best Rock Regular";
+//   src: url('Best Rock.woff') format('woff');
+//   font-style: normal;
+//   font-weight: normal;
+// }
 
 
 
@@ -25,3 +25,9 @@ $headers-font: "TheSkinny", "Helvetica", "sans-serif";
 //        font-url('FontFile.ttf') format('truetype')
 
 // $my-font: "Font Name";
+@font-face {
+    font-family: 'Best Rock Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Best Rock Regular'), url('Best Rock.woff') format('woff');
+}

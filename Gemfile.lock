@@ -249,16 +249,10 @@ DEPENDENCIES
   font-awesome-sass (~> 5.6.1)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
-<<<<<<< HEAD
-  pg (~> 0.21)
-  puma (~> 3.11)
-  rails (~> 5.2.3)
-=======
   pg
   puma
-  rails (~> 5.2.1)
+  rails (~> 5.2.3)
   rails_12factor
->>>>>>> bc1854d4fa9ce9c185aa312bbb507346faa1b09e
   sass-rails (~> 5.0)
   selenium-webdriver
   simple_form
