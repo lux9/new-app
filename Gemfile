@@ -1,14 +1,20 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.3'
+ruby '2.5.1'
+gem 'rails_12factor', group: :production
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+<<<<<<< HEAD
 gem 'rails', '~> 5.2.3'
 # Use pg instead of sqlite3 Use sqlite3 as the database for Active Record
 gem 'pg', '~> 0.21'
+=======
+gem 'rails', '~> 5.2.1'
+>>>>>>> bc1854d4fa9ce9c185aa312bbb507346faa1b09e
 # Use Puma as the app server
-gem 'puma', '~> 3.11'
+gem 'puma'
+gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
